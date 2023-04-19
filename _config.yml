@@ -1,37 +1,26 @@
+---
 title: Temps d'Images
+timezone: UTC
+collections:
+  events:
+    title: Events
+    output: true
+  events_eng:
+    title: Events Eng
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: duplacena@duplacena.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Debruçando-se sobre a relação entre as artes cénicas e a imagem em movimento,
+description: Debruçando-se sobre a relação entre as artes cénicas e a imagem em movimento,
   o TEMPS D’IMAGES é um festival multi-disciplinar que apresenta peças de teatro,
   performances, espectáculos, exposições e filmes em vários locais de Lisboa.
-url: "https://tempsdimages-portugal.com" # the base hostname & protocol for your site, e.g. http://example.com
-
-
-# Build settings
-permalink: pretty 
+url: https://tempsdimages-portugal.com
+permalink: pretty
 plugins:
-  - jekyll-feed
-
-
+- jekyll-feed
 sass:
   sass_dir: _sass
-
-collections:
-  events: 
-    output: true
-  events_eng: 
-    output: true
-    
-
-
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
