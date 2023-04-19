@@ -9,6 +9,7 @@ collections:
     label: "Events" # Used in the UI
     folder: "_events" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    extension: html
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - {label: "Imagem", name: "image", widget: "image", media_library: {allow_multiple: false}}
@@ -24,11 +25,11 @@ collections:
       - {label: "Classificação", name: "age", widget: "string", required: false}
       - {label: "Duração", name: "duracao", widget: "string", required: false}
       - {label: "Estreia", name: "estreia", widget: "string", required: false}
-      - {label: "Sinopse", name: "synopsis", widget: "markdown", required: false}
-      - {label: "Ficha Técnica", name: "tech", widget: "markdown", required: false}
+      - {label: "Sinopse", name: "synopsis", widget: "html", required: false}
+      - {label: "Ficha Técnica", name: "tech", widget: "html", required: false}
       - {label: "Biografias", name: "bios", widget: "list", fields: [
           {label: "Nome Artista", name: "artist_bio", widget: "string", required: false},
-          {label: "Biografia", name: "bio", widget: "markdown", required: false}
+          {label: "Biografia", name: "bio", widget: "html", required: false}
         ], required: false}
       - {label: "Parceiros", name: "parceiros", widget: "list", field: {label: "Parceiro", name: "partner", widget: "image"}, required: false}
 
