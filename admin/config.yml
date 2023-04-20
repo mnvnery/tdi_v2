@@ -25,11 +25,11 @@ collections:
       - {label: "Classificação", name: "age", widget: "string", required: false}
       - {label: "Duração", name: "duracao", widget: "string", required: false}
       - {label: "Estreia", name: "estreia", widget: "string", required: false}
-      - {label: "Sinopse", name: "synopsis", widget: "html", required: false}
-      - {label: "Ficha Técnica", name: "tech", widget: "html", required: false}
+      - {label: "Sinopse", name: "synopsis", widget: "text", required: false}
+      - {label: "Ficha Técnica", name: "tech", widget: "text", required: false}
       - {label: "Biografias", name: "bios", widget: "list", fields: [
           {label: "Nome Artista", name: "artist_bio", widget: "string", required: false},
-          {label: "Biografia", name: "bio", widget: "html", required: false}
+          {label: "Biografia", name: "bio", widget: "text", required: false}
         ], required: false}
       - {label: "Parceiros", name: "parceiros", widget: "list", field: {label: "Parceiro", name: "partner", widget: "image"}, required: false}
   - name: 'pages'
@@ -51,10 +51,10 @@ collections:
             default: about
           - label: O Festival
             name: festival
-            widget: html
+            widget: text
           - label: Ficha Técnica
             name: tech
-            widget: html
+            widget: text
           - label: Momento I
             name: momento_1
             widget: object
@@ -69,6 +69,6 @@ collections:
                 required: false
               - label: Info
                 name: info
-                widget: html
+                widget: text
 
 
