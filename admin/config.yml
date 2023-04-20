@@ -32,5 +32,43 @@ collections:
           {label: "Biografia", name: "bio", widget: "html", required: false}
         ], required: false}
       - {label: "Parceiros", name: "parceiros", widget: "list", field: {label: "Parceiro", name: "partner", widget: "image"}, required: false}
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - label: 'Sobre'
+        name: 'sobre'
+        file: 'sobre.html'
+        fields:
+          - label: Title
+            name: title
+            widget: hidden
+            default: about
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: about
+          - label: O Festival
+            name: festival
+            widget: html
+          - label: Ficha Técnica
+            name: tech
+            widget: html
+          - label: Momento I
+            name: momento_1
+            widget: object
+            fields:
+              - label: Titulo
+                name: title
+                widget: string
+                required: false
+              - label: Datas
+                name: datas
+                widget: string
+                required: false
+              - label: Info
+                name: info
+                widget: html
 
 
