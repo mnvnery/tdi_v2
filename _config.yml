@@ -8,6 +8,9 @@ collections:
   events_eng:
     title: Events Eng
     output: true
+  film:
+    title: Film
+    output: true
   posts:
     title: Posts
     output: true
